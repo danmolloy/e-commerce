@@ -1,16 +1,115 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .layout {
+    @apply min-h-screen w-screen flex flex-col justify-between bg-stone-100
+  }
+  .header {
+    @apply flex flex-row justify-between items-center h-24 justify-end border-b shadow-sm bg-white
+  }
+  .header-name {
+    @apply font-bold text-3xl
+  }
+  .header-icons {
+    @apply h-10 w-10 rounded-full hover:bg-stone-100 p-2 m-2 
+  }
+  .main {
+    @apply flex flex-col p-2 h-auto border
+  }
+  .home-window {
+    @apply p-4 h-screen flex flex-col items-center justify-start
+  }
+  .landing-page-link {
+    @apply border p-2 rounded bg-red-500 text-white hover:bg-red-400 m-4 self-end
+  }
+  .products-all {
+    @apply flex flex-col items-center md:flex-row flex-wrap justify-center
+  }
+  .product-tile {
+    @apply border shadow p-2 flex flex-col w-2/3 sm:w-1/2 md:w-1/3 m-2 items-center 
+  }
+  .product-text {
+    @apply p-4 text-gray-700 text-lg
+  }
+  .tile-img {
+    @apply w-60 h-48 relative m-2
+  }
+  .menu {
+    @apply flex flex-col border shadow w-1/3 self-end z-10 bg-white fixed top-20 items-start p-2
+  }
+  .menu-items {
+    @apply hover:bg-gray-100 w-full p-1 m-1 text-black hover:no-underline
+  }
+  .footer {
+    @apply border-t flex flex-row justify-center h-24 items-center w-full bg-stone-200 
+  }
+  .blue-links {
+    @apply text-blue-500 hover:underline
+  }
+  .react-icons {
+    @apply w-12 h-12 p-2 rounded-full hover:bg-stone-100 text-black hover:no-underline
+  }
+  .button {
+    @apply p-2 shadow-md w-28 rounded
+  }
+  .add-btn {
+    @apply  bg-blue-500 text-white hover:bg-blue-400
+  }
+  .buy-btn {
+    @apply bg-green-500 text-white hover:bg-green-400
+  }
+  .tile-btns {
+    @apply flex flex-row justify-between w-full items-center
+  }
+  .price {
+    @apply text-xl 
+  }
+  .cart-image {
+    @apply w-40 h-32 relative m-2
+  }
+  .cart-item {
+    @apply border flex flex-row justify-between p-4 shadow w-full lg:w-3/4 self-center
+  }
+  .cart-item-info {
+    @apply flex flex-col justify-center items-center
+  }
+  .cart-item-quantity {
+    @apply flex flex-row justify-between p-2 
+  }
+  .cart-item-options {
+    @apply flex flex-col justify-center justify-end 
+  }
+  .faq-list {
+   
+  }
+  .faq-item {
+    @apply border p-2 my-4 shadow
+  }
+  .faq-question {
+    @apply p-2 flex flex-row items-center justify-between
+  }
+  .faq-answer {
+    @apply border-t p-2
+  }
+  .form-label {
+    @apply self-start mt-2
+  }
+  .form-input {
+   @apply m-2
+  }
+  .form-message {
+    @apply m-2 h-24
+  }
+  .form-btn {
+    @apply border p-2 w-24 rounded m-2 self-end shadow bg-blue-500 hover:bg-blue-400 text-white
+  }
+  .form {
+    @apply flex flex-col w-3/4 self-center md:w-1/2
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+.main {
+  min-height: calc(100vh - 12rem);
 }
