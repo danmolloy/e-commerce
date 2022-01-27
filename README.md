@@ -1,5 +1,7 @@
 # E-Commerce Site
 
+## Features
+
 
 ## Stack
 - NextJS
