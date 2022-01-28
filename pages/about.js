@@ -1,17 +1,7 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import Layout from "../components/layout";
 
 export default function About() {
-  const [products, setProducts] = useState('')
-
-  useEffect(() => {
-    fetch('/api/products')
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data)
-      })
-  }, [])
 
   return (
     <Layout>

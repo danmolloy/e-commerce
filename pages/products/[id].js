@@ -5,7 +5,7 @@ import { useShoppingCart, formatCurrencyString } from 'use-shopping-cart'
 import Link from "next/link";
 import { server } from '../../config/index'
 import axios from "axios";
-
+import products from '../../data/products.json'
 
 
 export default function ProductPage({ products }) {
@@ -59,8 +59,6 @@ export default function ProductPage({ products }) {
 
 export async function getStaticProps() {
 
-  const res = await fetch(`${server}/api/products`)
-  const products = await res.json()
 
   return {
     props: {
@@ -70,9 +68,6 @@ export async function getStaticProps() {
 }
 
 export async function getStaticPaths() {
-
-  const res = await fetch(`${server}/api/products`)
-  const products = await res.json()
 
   const paths = products.map((i) => ({
     params: { id: i.key },
