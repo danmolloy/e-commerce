@@ -1,4 +1,4 @@
-import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { Formik, Field } from 'formik';
 import Layout from "../components/layout";
 
 export default function() {

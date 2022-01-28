@@ -14,7 +14,7 @@ export default function Home() {
           <Image src="/images/coffee-log.jpeg" height="400" width="600"/>
         </div>
         <div className="home-window">
-          <h2 className="p-4">About</h2>
+          <h2 className="p-4 text-amber-500">About</h2>
           <p className="p-4">Our mission is to bring you fair-trade, sustainable coffee. Discover the taste of everyone is talking about.</p>
           <Image src="/images/coffee-plant.jpeg" width={600} height={400} />
           <Link href="/about">
@@ -22,7 +22,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="home-window">
-          <h2 className="p-4">Shop</h2>
+          <h2 className="p-4 text-amber-500">Shop</h2>
           <Image src="/images/hot-coffee.jpeg" width={600} height={400} />
           <p className="p-4">We sell a variety of blends with next day delivery.</p>
 

@@ -15,7 +15,7 @@ export default function About() {
 
   return (
     <Layout>
-      <h1 className="p-2">About</h1>
+      <h1 className="p-2 text-amber-500">About</h1>
       <h2 className="p-4 italic text-gray-500 text-xl">We are a family-run business, roasting coffee since 1941.</h2>
       <div className="self-center">
         <Image src="/images/coffee-farm.jpeg" height="400" width="600" />

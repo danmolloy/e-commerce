@@ -2,27 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arimo:wght@500&family=Heebo:wght@700&family=Open+Sans&display=swap');
+
 @layer components {
   .layout {
-    @apply min-h-screen w-screen flex flex-col justify-between bg-stone-100
+    @apply min-h-screen w-screen flex flex-col justify-between bg-stone-800 text-stone-100 font-serif
   }
   .header {
-    @apply flex flex-row justify-between items-center h-24 justify-end border-b shadow-sm bg-white
+    @apply flex flex-row justify-between items-center h-24 justify-end shadow-md bg-stone-900
   }
   .header-name {
-    @apply font-bold text-3xl
+    @apply font-bold text-3xl text-amber-500
   }
   .header-icons {
-    @apply h-10 w-10 rounded-full hover:bg-stone-100 p-2 m-2 
+    @apply h-10 w-10 rounded-full hover:bg-stone-700 p-2 m-2 
   }
   .main {
-    @apply flex flex-col p-2 h-auto border
+    @apply flex flex-col p-2 h-auto 
   }
   .home-window {
     @apply p-4 h-screen flex flex-col items-center justify-start
   }
   .landing-page-link {
-    @apply border p-2 rounded bg-red-500 text-white hover:bg-red-400 m-4 self-end
+    @apply  p-2 rounded bg-red-500 text-white hover:bg-red-400 m-4 self-end
   }
   .products-all {
     @apply flex flex-col items-center md:flex-row flex-wrap justify-center
@@ -43,13 +45,13 @@
     @apply hover:bg-gray-100 w-full p-1 m-1 text-black hover:no-underline
   }
   .footer {
-    @apply border-t flex flex-row justify-center h-24 items-center w-full bg-stone-200 
+    @apply flex flex-row justify-center h-24 items-center w-full bg-stone-900 
   }
   .blue-links {
     @apply text-blue-500 hover:underline
   }
   .react-icons {
-    @apply w-12 h-12 p-2 rounded-full hover:bg-stone-100 text-black hover:no-underline
+    @apply w-12 h-12 p-2 rounded-full hover:bg-stone-700 text-amber-500 hover:no-underline
   }
   .button {
     @apply p-2 shadow-md w-28 rounded
