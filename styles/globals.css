@@ -111,6 +111,28 @@
   }
 }
 
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+}
+
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fade-element {
+  animation-name: fade-in;
+  animation-duration: 4s;
+}
+
+.home-window {
+  min-height: calc(100vh - 12rem);
+}
+
 .layout {
   font-family: "Abril Fatface";
 } 

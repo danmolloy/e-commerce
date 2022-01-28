@@ -34,7 +34,7 @@ export default function Layout({ children }) {
         <MenuIcon showMenu={() => setShowMenu(!showMenu)}/>
       </header>
       {showMenu && <Menu />}
-      <main className="main">
+      <main className=" fade-element main">
         {children}
       </main>
       
