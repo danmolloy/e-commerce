@@ -13,4 +13,5 @@
 - [NextJS](https://nextjs.org/)
 - [Stripe](https://stripe.com/gb)
 - [Use-Shopping-Cart](https://useshoppingcart.com/)
-
+- [TailwindCSS](https://tailwindcss.com/)
+- [React-Reveal](https://www.react-reveal.com/)
