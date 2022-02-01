@@ -15,23 +15,15 @@ export default function Home() {
   return (
     <Layout>
       <div className="home">
-        <div className="fade-element home-window justify-start">
+        <div className="flex flex-col fade-element home-window justify-start">
           <h1 className="font-medium p-4">Sustainably-sourced coffee you'll <span className="text-red-500 font-bold">love</span></h1>
-          <div >
-            <Carousel defaultWait={4000} >
-              <Slide right >
-                <Image src="/images/coffee-log.jpeg" height="400" width="600"/>
-              </Slide>
-              <Slide right >
-                <Image src="/images/coffee-hands.jpeg" height="400" width="600"/>
-              </Slide>
-              <Slide right>
-                <Image src="/images/coffee-farm.jpeg" height="400" width="600"/>
-              </Slide>
-            </Carousel>
+          <div className="">
+            <Fade>
+            <Image src="/images/coffee-farm.jpeg" height="400" width="600"/>
+            </Fade>
           </div>
         </div>
-        <Fade  bottom>
+        <Fade >
           <div className="home-window">
           <h2 className="p-4 text-amber-500">About</h2>
           <p className="p-4">Our mission is to bring you fair-trade, sustainable coffee. Discover the taste of everyone is talking about.</p>
@@ -41,7 +33,7 @@ export default function Home() {
           </Link>
           </div>
         </Fade>
-        <Fade bottom> 
+        <Fade > 
           <div className="home-window">
           <h2 className="p-4 text-amber-500">Shop</h2>
           <Image src="/images/hot-coffee.jpeg" width={600} height={400} />

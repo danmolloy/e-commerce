@@ -20,20 +20,25 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header className="header">
+        <div className="header-title">
+        <Link href="/">
+          <a>
+            <h1 className="header-name">Dan's Coffee</h1>
+          </a>
+        </Link>
+        </div>
+        <div className="all-header-icons">
         <Link href="/cart">
           <a className="flex flex-row items-center text-blue-500">
             <AiOutlineShoppingCart className='header-icons'/>
             {cartCount > 0 && <p>{cartCount}</p>}
           </a>
         </Link>
-        <Link href="/">
-          <a>
-            <h1 className="header-name">Dan's Coffee</h1>
-          </a>
-        </Link>
         <MenuIcon showMenu={() => setShowMenu(!showMenu)}/>
+        </div>
+        
       </header>
-      {showMenu && <Menu />}
+      {showMenu && <Menu showMenu={() => setShowMenu(false)}/>}
       <main className=" fade-element main">
         {children}
       </main>
