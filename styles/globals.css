@@ -28,13 +28,13 @@
     @apply p-4 h-screen flex flex-col items-center justify-start
   }
   .landing-page-link {
-    @apply  p-2 rounded bg-red-500 text-white hover:bg-red-400 m-4 self-end
+    @apply  p-2 rounded bg-red-500 text-white hover:bg-red-400 active:bg-red-300 m-4 self-end
   }
   .products-all {
     @apply flex flex-col items-center md:flex-row flex-wrap justify-center
   }
   .product-tile {
-    @apply shadow border p-2 flex flex-col w-2/3 sm:w-1/2 md:w-1/3 m-2 items-center 
+    @apply shadow border p-2 flex flex-col m-1 sm:w-1/2 md:w-1/3 items-center 
   }
   .product-text {
     @apply p-4  text-lg

@@ -20,7 +20,12 @@ export default function ProductTile({ product }) {
   return (
       <div  className="product-tile">
       <h3>{product.name}</h3>
-
+      <p className="price">
+            {formatCurrencyString({
+              value: product.price,
+              currency: 'gbp',
+            })}
+          </p>
       <div className="tile-img">
         <Image src={product.image} height="400" width="600" alt="product" />
       </div>
@@ -33,12 +38,7 @@ export default function ProductTile({ product }) {
       
       <div className="tile-btns">
         <button className="button add-btn" onClick={() => addItem(product)}>Add to Cart</button>
-        <p className="price">
-            {formatCurrencyString({
-              value: product.price,
-              currency: 'gbp',
-            })}
-          </p>
+
         <button className="button buy-btn" onClick={() => handleClick()}>Buy Now</button>
       </div>
       </div>

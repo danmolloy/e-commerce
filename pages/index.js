@@ -16,7 +16,7 @@ export default function Home() {
     <Layout>
       <div className="home">
         <div className="flex flex-col fade-element home-window justify-start">
-          <h1 className="font-medium p-4">Sustainably-sourced coffee you'll <span className="text-red-500 font-bold">love</span></h1>
+          <h1 className="font-medium p-2">Sustainably-sourced coffee you'll <span className="text-red-500 font-bold">love</span></h1>
           <div className="">
             <Fade>
             <Image src="/images/coffee-farm.jpeg" height="400" width="600"/>
@@ -26,8 +26,8 @@ export default function Home() {
         <Fade >
           <div className="home-window">
           <h2 className="p-4 text-amber-500">About</h2>
-          <p className="p-4">Our mission is to bring you fair-trade, sustainable coffee. Discover the taste of everyone is talking about.</p>
           <Image src="/images/coffee-plant.jpeg" width={600} height={400} />
+          <p className="p-4">Our mission is to bring you fair-trade, sustainable coffee. Discover the taste of everyone is talking about.</p>
           <Link href="/about">
             <a className="landing-page-link">Learn More</a>
           </Link>
