@@ -10,7 +10,7 @@
     @apply flex flex-col justify-between items-center justify-end border-b
   }
   .header-name {
-    @apply font-semibold text-6xl p-2 hover:text-stone-700 active:text-stone-600
+    @apply font-semibold text-5xl sm:text-6xl mt-2  hover:text-stone-700 active:text-stone-600
   }
   .all-header-icons {
     @apply flex flex-row justify-between w-full  px-4

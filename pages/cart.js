@@ -54,9 +54,9 @@ export default function Cart() {
           </h2>
         </div>
         <div className="flex flex-row justify-between p-2 m-2">
-          <button onClick={() => clearCart()} className="p-2 rounded shadow text-white hover:bg-red-400 focus:ring ring-red-300 focus:outline-none bg-red-500">Clear Cart</button>
+          <button onClick={() => clearCart()} className="p-2 rounded shadow text-white hover:bg-red-400 active:bg-red-300 focus:ring ring-red-300 focus:outline-none bg-red-500">Clear Cart</button>
           <form onSubmit={handleCheckout}/* action="/api/checkout_sessions" method="POST" */>
-            <button type="submit" className="p-2 rounded shadow text-white hover:bg-blue-400 focus:ring ring-blue-300 focus:outline-none bg-blue-500" >Checkout</button>
+            <button type="submit" className="p-2 rounded shadow text-white hover:bg-blue-400 active:bg-blue-300 focus:ring ring-blue-300 focus:outline-none bg-blue-500" >Checkout</button>
           </form>
         </div>
         </>
