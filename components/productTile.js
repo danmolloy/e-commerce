@@ -20,15 +20,16 @@ export default function ProductTile({ product }) {
   return (
       <div  className="product-tile">
       <h3>{product.name}</h3>
-      <Link href={`/products/${product.key}`}>
-        <a className="button w-32 pl-4 hover:bg-gray-700 bg-black text-white">
-          View Product
-        </a>
-      </Link>
 
       <div className="tile-img">
         <Image src={product.image} height="400" width="600" alt="product" />
       </div>
+
+      <Link href={`/products/${product.key}`}>
+        <a className="button w-32 m-2 bg-stone-300 hover:bg-stone-200 active:bg-stone-100">
+          View Product
+        </a>
+      </Link>
       
       <div className="tile-btns">
         <button className="button add-btn" onClick={() => addItem(product)}>Add to Cart</button>

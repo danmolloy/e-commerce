@@ -46,7 +46,7 @@ export default function ProductPage({ products }) {
       </p>
       <div className="flex flex-row justify-between p-2">
       <Link href="/products/viewAll">
-        <a className="button self-start bg-black text-white pl-3 hover:bg-gray-700">
+        <a className="button self-start bg-stone-300 hover:bg-stone-200 active:bg-stone-100">
           All Products
         </a>
       </Link>

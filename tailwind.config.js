@@ -1,4 +1,5 @@
 const plugin = require('tailwindcss/plugin')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
@@ -8,7 +9,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'serif': [ "Abril Fatface", "ui-serif", "Georgia", "Cambria", "Times New Roman", "Times", "serif"]
+      custom: [ "Libre Baskerville", "Andada Pro", "Lora", ...defaultTheme.fontFamily.serif]
       }
   },
   plugins: [
