@@ -1,16 +1,143 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .layout {
+    @apply min-h-screen  w-screen flex flex-col justify-between bg-white text-stone-800 font-custom
+  }
+  .header {
+    @apply flex flex-col justify-between items-center justify-end border-b
+  }
+  .header-name {
+    @apply font-semibold text-5xl sm:text-6xl mt-2  hover:text-stone-700 active:text-stone-600
+  }
+  .all-header-icons {
+    @apply flex flex-row justify-between w-full  px-4
+  }
+  .header-icons {
+    @apply h-10 w-10 rounded-full active:bg-stone-200 hover:bg-stone-100 p-2 m-2 
+  }
+  .menu-icon {
+    @apply
+  }
+  .main {
+    @apply flex flex-col p-2 h-auto w-full 
+  }
+  .home-window {
+    @apply p-4 h-screen flex flex-col items-center justify-start
+  }
+  .landing-page-link {
+    @apply  p-2 rounded bg-red-500 text-white hover:bg-red-400 active:bg-red-300 m-4 self-end
+  }
+  .products-all {
+    @apply flex flex-col items-center md:flex-row flex-wrap justify-center
+  }
+  .product-tile {
+    @apply shadow border p-2 flex flex-col m-1 sm:w-1/2 md:w-1/3 items-center 
+  }
+  .product-text {
+    @apply p-4  text-lg
+  }
+  .tile-img {
+    @apply w-60 h-40 relative border
+  }
+  .menu {
+    @apply flex flex-col border shadow w-2/3 md:w-1/3 self-end z-10 bg-white fixed items-start p-2
+  }
+  .menu-items {
+    @apply hover:bg-gray-100 active:bg-gray-200 w-full p-1 m-1 text-black hover:no-underline
+  }
+  .footer {
+    @apply flex flex-row justify-center h-24 items-center w-full bg-stone-100 
+  }
+  .blue-links {
+    @apply text-blue-500 hover:underline
+  }
+  .react-icons {
+    @apply w-12 h-12 p-2 rounded-full hover:bg-stone-200 active:bg-stone-300 hover:no-underline
+  }
+  .button {
+    @apply p-2 shadow-md w-28 rounded
+  }
+  .add-btn {
+    @apply  bg-blue-500 text-white hover:bg-blue-400 active:bg-blue-300
+  }
+  .buy-btn {
+    @apply bg-green-500 text-white hover:bg-green-400 active:bg-green-300
+  }
+  .tile-btns {
+    @apply flex flex-row justify-between w-full items-center
+  }
+  .price {
+    @apply text-xl 
+  }
+  .cart-image {
+    @apply w-40 h-32 relative m-2
+  }
+  .cart-item {
+    @apply border flex flex-row justify-between p-4 m-2 shadow w-full lg:w-3/4 self-center
+  }
+  .cart-item-info {
+    @apply flex flex-col justify-center items-center
+  }
+  .cart-item-quantity {
+    @apply flex flex-row justify-between p-2 
+  }
+  .cart-item-options {
+    @apply flex flex-col justify-center justify-end 
+  }
+  .faq-list {
+   
+  }
+  .faq-item {
+    @apply border p-2 my-4 shadow
+  }
+  .faq-question {
+    @apply p-2 flex flex-row items-center justify-between
+  }
+  .faq-answer {
+    @apply border-t p-2
+  }
+  .form-label {
+    @apply self-start mt-2
+  }
+  .form-input {
+   @apply m-2 border border-stone-300
+  }
+  .form-message {
+    @apply m-2 h-24 border border-stone-300
+  }
+  .form-btn {
+    @apply border p-2 w-24 rounded m-2 self-end shadow bg-blue-500 hover:bg-blue-400 text-white
+  }
+  .form {
+    @apply flex flex-col w-3/4 self-center md:w-1/2
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
 }
 
-* {
-  box-sizing: border-box;
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fade-element {
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+
+.home-window {
+  height: calc(100vh - 6rem);
+}
+
+.main {
+  min-height: calc(100vh - 12rem);
 }

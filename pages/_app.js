@@ -1,7 +1,14 @@
 import '../styles/globals.css'
+import { CartProvider } from 'use-shopping-cart'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }) {
+  return (
+    <CartProvider 
+      mode='payment'
+      cartMode="checkout-session"
+      stripe={process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY}
+      currency="GBP">
+      <Component {...pageProps} />
+    </CartProvider>
+  )
 }
-
-export default MyApp
